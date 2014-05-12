@@ -53,19 +53,41 @@ public class MainActivity extends Activity implements OnClickListener {
 		
 		try {
 			if (v.getId() == button1.getId()) {
-				if (turn == 0) {
-					button1.setText("O");
-					turn = 1;
-				}else{
-					button1.setText("X");
-					turn = 0;
-				}
+				manipulateButton(button1);
+			}else if (v.getId() == button2.getId()) {
+				manipulateButton(button2);
+			}else if (v.getId() == button3.getId()) {
+				manipulateButton(button3);
+			}else if (v.getId() == button4.getId()) {
+				manipulateButton(button4);
+			}else if (v.getId() == button5.getId()) {
+				manipulateButton(button5);
+			}else if (v.getId() == button6.getId()) {
+				manipulateButton(button6);
+			}else if (v.getId() == button7.getId()) {
+				manipulateButton(button7);
+			}else if (v.getId() == button8.getId()) {
+				manipulateButton(button8);
+			}else if (v.getId() == button9.getId()) {
+				manipulateButton(button9);
 			}
+			
 		} catch (Exception e) {
 			Log.d("Exception", e.getMessage());
 		}
 		
 		
+	}
+	
+	private void manipulateButton(Button b){
+		b.setEnabled(false);
+		if (turn == 0) {
+			b.setText("O");
+			turn = 1;
+		}else{
+			b.setText("X");
+			turn = 0;
+		}
 	}
 
 }
