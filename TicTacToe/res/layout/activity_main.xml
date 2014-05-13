@@ -98,13 +98,13 @@
         android:text="@string/game_reset"/>
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/whoseTurn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/resetGame"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="16dp"
-        android:text="X&apos;s Turn"
+        android:text="@string/turn_text"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
 </RelativeLayout>

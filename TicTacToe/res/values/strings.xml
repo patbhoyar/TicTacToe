@@ -3,6 +3,10 @@
 
     <string name="app_name">Tic Tac Toe</string>
     <string name="action_settings">Settings</string>
+    <string name="turn_text">O\'s Turn</string>
     <string name="game_reset">Reset</string>
+    <string name="x_won">X Won</string>
+    <string name="o_won">O Won</string>
+    <string name="game_draw">Game Draw</string>
 
 </resources>
